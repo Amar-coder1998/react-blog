@@ -18,6 +18,10 @@ const initialState = {
   categories: null,
   tags: null,
   post: null,
+  displaypage: 1,
+     email:"",
+     pass:"",
+     userexists:0,
   tabSelected: { index: 0, value: "" },
   searchPosts: {
     searchValue: "",
@@ -42,6 +46,18 @@ function rootReducer(state = initialState, action) {
       return {
         ...state,
         post: action.post,
+      };
+    case "DisplayScreenReducer": 
+      return {
+        ...state,
+        displaypage: action.payload
+      };
+    case "RegisterUserReducer": 
+      return {
+        ...state,
+        email: action.payload.email,
+        pass: action.payload.pass,
+        userexists:action.payload.user
       };
     case SET_POSTS:
       return {

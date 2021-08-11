@@ -38,3 +38,16 @@ export function setTabSelected(tabSelected) {
 export function setSearchPosts(searchPosts) {
   return { type: SET_SEARCH_POSTS, searchPosts };
 }
+export const RegisterUser = (payload) => {
+  return {
+    type: "RegisterUserReducer",
+    payload:payload
+  };
+}
+
+export const DisplayScreen = (payload) => {
+  return {
+    type: "DisplayScreenReducer",
+    payload:payload
+  };
+};
