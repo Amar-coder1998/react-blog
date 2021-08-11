@@ -8,7 +8,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 import SideBarMenu from './sidebar-menu-component';
 import { isMobile } from '../utils/functions';
 import { useSelector } from "react-redux";
-
+//app header component
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
