@@ -8,6 +8,9 @@ import Button from "@material-ui/core/Button";
 import Divider from "@material-ui/core/Divider";
 import "./post-component.css";
 import { ToDateTime } from '../../utils/functions';
+import { IconButton } from '@material-ui/core';
+import FacebookIcon from '@material-ui/icons/Facebook';
+import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 
 const useStyles = makeStyles((theme) => ({
   mainFeaturedPost: {
@@ -73,7 +76,7 @@ export default function FeaturedPost(props) {
           >
             Linku origjinal
           </Button>
-          {/* <IconButton
+          <IconButton
             className={classes.buttons}
             aria-label="Facebook"
             component="span"
@@ -88,7 +91,7 @@ export default function FeaturedPost(props) {
             size="small"
           >
             <WhatsAppIcon /> 
-          </IconButton> */}
+          </IconButton>
             <i style={{fontSize: 12}}>{ToDateTime(post.date)}</i>
         </Typography>
         <Divider />

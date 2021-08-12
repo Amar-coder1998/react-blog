@@ -49,11 +49,11 @@ export default function SavedPage() {
         <Grid item xs={12} md={6}>
           <TextField
             id="standard-full-width"
-            label="Kërkoni një postim të ruajtur"
+            label="Search for a saved post"
             style={{ margin: 8 }}
             value={searchVal}
             // placeholder="Shkruani një fjalë ose një grup fjalësh"
-            helperText="Me shumë se 2 karaktere"
+            helperText="With more than 2 characters"
             fullWidth
             margin="normal"
             InputLabelProps={{
@@ -71,7 +71,7 @@ export default function SavedPage() {
           <Posts posts={posts} showDelete handleDelete={handleDelete} />
         ) : (
           <h3 style={{width: "100%", textAlign: "center"}}>
-            Asnjë postim nuk u gjend.
+          No posts were found.
           </h3>
         )}
       </Grid>

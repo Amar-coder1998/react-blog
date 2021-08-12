@@ -13,7 +13,7 @@ export default class SiteService {
         else
           reject({
             errorMessage:
-              "Momentalisht nuk keni lidhje interneti dhe nuk keni shikuar asnje post deri tani. Provoni perseri pasi te jeni ne linje.",
+              "You currently have no internet connection and have not looked at any posts so far. Try again after you're on the line.",
           });
       });
     } else {

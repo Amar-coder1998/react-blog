@@ -1,4 +1,7 @@
 import React, { form, useState} from "react";
+import { useDispatch, useSelector } from 'react-redux';
+import { DisplayScreen } from '../redux/actions/actions';
+
 import ReactDOM from 'react-dom';
 import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
@@ -14,10 +17,11 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 
-import { useDispatch, useSelector } from 'react-redux';
-import { DisplayScreen } from '../redux/actions/actions';
 
 const Login = () => {
+  const changeScreen= (screenNumber) => {
+    dispatch(DisplayScreen(screenNumber));
+  }
   const dispatch = useDispatch();
   const allStates = useSelector((state) => state);
   const [email_field, setEmail] = useState("");
@@ -131,12 +135,12 @@ const Login = () => {
           </Button>
           <Grid container>
             <Grid item xs>
-              <Link href="#" variant="body2">
+              <Link href="/forgotpassword" variant="body2">
                 Forgot password?
               </Link>
             </Grid>
             <Grid item>
-              <Link href="#" variant="body2">
+              <Link href="/register" variant="body2">
                 {"Don't have an account? Sign Up"}
               </Link>
             </Grid>

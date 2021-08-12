@@ -133,6 +133,12 @@ const MainComponent = () => {
                       <Route path="/post">
                         <PostPage />
                       </Route>
+                      <Route path="/forgotpassword">
+                        <Forgetpassword />
+                      </Route>
+                      <Route path="/register">
+                        <Register />
+                      </Route>
                     </Switch>
                   </Box>
                 </Container>

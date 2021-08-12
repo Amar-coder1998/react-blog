@@ -12,7 +12,7 @@ export default function SnackbarNoInternet() {
     return (<Snackbar
               anchorOrigin={{ vertical: "top", horizontal: "center" }}
               open={open}
-              message="Momentalisht nuk jeni online. Do ju shfaqen postimet e shikuara se fundmi."
+              message="You're not online right now. You'll be shown the recently viewed posts."
               action={
                   <IconButton
                     aria-label="close"

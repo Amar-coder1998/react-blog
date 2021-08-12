@@ -138,7 +138,7 @@ export default function SideBarMenu({ open, handleOpen }) {
             <ListItemIcon>
               <HomeIcon />
             </ListItemIcon>
-            <ListItemText primary="Kryefaqja" />
+            <ListItemText primary="Home" />
           </ListItem>
           <ListItem
             button
@@ -149,7 +149,7 @@ export default function SideBarMenu({ open, handleOpen }) {
             <ListItemIcon>
               <SearchIcon />
             </ListItemIcon>
-            <ListItemText primary="Kërkoni" />
+            <ListItemText primary="Search" />
           </ListItem>
           <ListItem
             button
@@ -160,7 +160,7 @@ export default function SideBarMenu({ open, handleOpen }) {
             <ListItemIcon>
               <BookmarksIcon />
             </ListItemIcon>
-            <ListItemText primary="Preferencat" />
+            <ListItemText primary="Preferences" />
           </ListItem>
           <ListItem
             button
@@ -171,7 +171,7 @@ export default function SideBarMenu({ open, handleOpen }) {
             <ListItemIcon>
               <FavoriteIcon />
             </ListItemIcon>
-            <ListItemText primary="Ruajtur" />
+            <ListItemText primary="Saved" />
           </ListItem>
           <ListItem
             button
@@ -182,7 +182,7 @@ export default function SideBarMenu({ open, handleOpen }) {
             <ListItemIcon>
               <SettingsIcon />
             </ListItemIcon>
-            <ListItemText primary="Cilësimet" />
+            <ListItemText primary="Settings" />
           </ListItem>
         </List>
       </Drawer>

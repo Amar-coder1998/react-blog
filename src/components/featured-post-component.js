@@ -87,7 +87,7 @@ export default function FeaturedPost(props) {
               // onClick={() => history.push(location)}
               onClick={() => handlePost(post)}
             >
-              Vazhdo leximin...
+              Keep reading...
             </Button>
           </div>
         </Grid>

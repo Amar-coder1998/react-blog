@@ -52,14 +52,14 @@ export default function HomePage() {
   }, [tabSelected.index]);
 
   const sections = [
-    { title: "Të gjitha", url: "#" },
-    { title: "Teknologji", url: "#" },
+    { title: "ALL", url: "#" },
+    { title: "TECHNOLOGY", url: "#" },
     { title: "Apple", url: "#" },
     { title: "Microsoft", url: "#" },
     { title: "Android", url: "#" },
     { title: "Samsung", url: "#" },
-    { title: "Shkence", url: "#" },
-    { title: "Programim", url: "#" },
+    { title: "Sciences", url: "#" },
+    { title: "Programmer" },
     { title: "Design", url: "#" },
     { title: "Nasa", url: "#" },
     { title: "Covid", url: "#" },

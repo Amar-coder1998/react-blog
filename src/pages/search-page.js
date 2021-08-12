@@ -61,11 +61,11 @@ export default function SearchPage() {
         <Grid item xs={12} md={6}>
           <TextField
             id="standard-full-width"
-            label="Kërkoni një postim"
+            label="Search for a post"
             style={{ margin: 8 }}
             value={searchVal}
             // placeholder="Shkruani një fjalë ose një grup fjalësh"
-            helperText="Me shumë se 2 karaktere"
+            helperText="With more than 2 characters"
             fullWidth
             margin="normal"
             InputLabelProps={{
